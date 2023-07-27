@@ -1,0 +1,38 @@
+body {
+    width: 1512px;
+height: 982px;
+}
+#post{
+    color: var(--gray, #575757);
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 153.846% */
+    letter-spacing: 1.3px;
+    width: 359px;
+    height: 109px;
+    flex-shrink: 0; 
+}
+header {
+    display: flex;
+    width: 1512px;
+    padding: 15px 79px;
+    align-items: flex-start;
+    gap: 8px;
+    background: var(--primary, #32325D);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+header > h1{
+    color: var(--white, #FFF);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+header > img{
+    width: 28px;
+height: 28px;
+flex-shrink: 0;
+}
