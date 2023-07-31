@@ -1,1 +1,42 @@
-console.log("testando");
+import { dataPosts } from './data.js';
+import { Post } from './interfaces.js';
+
+
+//Manipulando o DOM
+
+const ul = document.getElementById("showcase");
+
+function showdata(listDataBase: Post[]){
+    const showcase = document.getElementById("showcase")
+
+    listDataBase.forEach((item) => {
+        const article = document.createElement("article");
+        const img = document.createElement("img");
+        const h2 = document.createElement("h2");
+        const p = document.createElement("p");
+
+        article.classList.add("post")
+        img.classList.add("post-image")
+
+        img.src = item.imageUrl;
+        h2.innerText = item.title;
+        p.textContent = item.body;
+
+        article.appendChild(img);
+        article.appendChild(h2);
+        article.appendChild(p);
+
+        //
+        //article.addEventListener("click", function()// {
+           // ({...item, id: dataPosts.length + 1})}
+
+        ul?.appendChild(article);
+        if(showcase){
+        showcase.appendChild(article)
+        }
+    });
+}
+showdata(dataPosts);
+
+let posts = document.querySelector(".post");
+console.log(posts);

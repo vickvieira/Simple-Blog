@@ -1,11 +1,5 @@
-interface Post {
-    postId: number;
-    title: string;
-    imageUrl: string;
-    body: string;
-}
-
-const dataPosts: Post[] = [
+import {Post, Comments} from "./interfaces"
+export const dataPosts: Post[] = [
     {
     postId: 1,
     title: 'First Post',
@@ -29,17 +23,7 @@ const dataPosts: Post[] = [
 ]
 
 
-
-
-
-interface Comments {
-    id: number
-    postId: number
-    email: string
-    body: string
-   }
-   
-const dataComments: Comments[] = [
+export const dataComments: Comments[] = [
     {
     id: 1,
     postId: 1,
@@ -64,35 +48,5 @@ const dataComments: Comments[] = [
 
 
 
-//Manipulando o DOM
 
-const ul = document.getElementById("showcase");
-
-function showdata(listDataBase: Post[]){
-    const showcase = document.getElementById("showcase")
-
-    listDataBase.forEach((item) => {
-        const article = document.createElement("article");
-        const img = document.createElement("img");
-        const h2 = document.createElement("h2");
-        const p = document.createElement("p");
-
-        article.classList.add("post")
-        img.classList.add("post-image")
-
-        img.src = item.imageUrl;
-        h2.innerText = item.title;
-        p.textContent = item.body;
-
-        article.appendChild(img);
-        article.appendChild(h2);
-        article.appendChild(p);
-
-        ul?.appendChild(article);
-        if(showcase){
-        showcase.appendChild(article)
-        }
-    });
-}
-showdata(dataPosts);
 
