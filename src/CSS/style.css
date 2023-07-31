@@ -1,55 +1,28 @@
 
-/*header {
-    display: flex;
-    width: 1354px;
-    height: 29px;
-    padding: 15px 79px;
-    align-items: flex-start;
-    gap: 8px;
-    background: var(--primary, #32325D);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-}   
-*/
-/*.post{
-    color: var(--gray, #575757);
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 20px; /* 153.846% *//*
-    border: solid 10px black;
-    letter-spacing: 1.3px;
-    width: 359px;
-    height: 109px;
-    flex-shrink: 0; 
-}
-
-.post img{
-    width: 409px;
-    height: 273px;
-    flex-shrink: 0;
-}
-section > h1{
-    color: var(--title, #3A4F9A);
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px; /* 55.556% *//*
-    letter-spacing: 3.6px;
-    margin: 108px, 73px, 1212px, 79px;
-    
-}
-*/
-* {
-    
-}
 body {
     width: 1512px;
     height: 982px;
     margin: 0px;
     font-family: Inter, sans-serif;
 }
-header{
+
+.list-posts {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    bottom: 58px;
+    display: grid;
+    grid-template-columns: 409px 409px 409px;
+    max-inline-size: 100%;
+    row-gap: 63px;
+    column-gap: 63px
+}
+
+.page-content {
+    margin-left: 79px;
+}
+
+header {
     position: sticky;
     top: 0px;
     background: var(--primary, #32325D);
@@ -57,70 +30,76 @@ header{
     width: 1354px;
     height: 29px;
     padding: 15px 79px;
-    align-items: flex-start;
     gap: 8px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 10;
 }
+
 header img {
     width: 28px;
     height: 28px;
     flex-shrink: 0;
 }
-header > h1{
+
+header h1 {
     color: var(--white, #FFF);
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    display: inline;
-    position: relative;
-    bottom: 15px;
+    display: flex;
+    align-items: center;
+    
 }
 
-.imagem-post{
+.post-image {
     width: 409px;
     height: 273px;
     flex-shrink: 0;
 }
-#page-content h1{
+
+.page-content h1 {
     color: var(--title, #3A4F9A);
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
     line-height: 20px; /* 55.556% */
     letter-spacing: 3.6px;
-    margin: 108px 1212px 73px 79px;
-    width: 223px;
+    margin: 108px 1212px 73px 0px;
+    width: 224px;
 }
+
 #icon {
     width: 214px;
     position: relative;
-    left: 82px;
-    bottom: 46px;
+    margin: 3px;
+    margin-bottom: 47px;
+    bottom: 56px;
     stroke-width: 3px;
     stroke: var(--title, #3A4F9A);
     border: 3px;
-
 }
-.post{
+
+.post {
     width: 409px;
     height: 455px;
-    margin-left: 79px;
     border-radius: 8px;
     background: var(--white, #FFF);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     position: relative;
 }
-.post h2{
+
+.post h2 {
     color: var(--title, #3A4F9A);
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 20px; /* 100% */
     letter-spacing: 2px;
-    margin: 20px 258px 15px 29px;
+    margin-left: 26px;
 }
-.post p{
+
+.post p { 
     color: var(--gray, #575757);
     font-size: 13px;
     font-style: normal;
@@ -128,15 +107,23 @@ header > h1{
     line-height: 20px; /* 153.846% */
     letter-spacing: 1.3px;
     margin: 15px 21px 18px 29px;
+    width: 359px;
+    height: 109px;
+    flex-shrink: 0;
 }
 
-.post footer{
+.post footer {
     color: var(--title, #3A4F9A);
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
     line-height: 20px; /* 153.846% */
+    width: 70px;
     letter-spacing: 1.3px;
     position: relative;
-    margin: -15px 3px 5px 292px;
+    bottom: 35px; 
+    margin: 0px 18px 5px 321px;
 }
+.
+
+
