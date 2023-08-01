@@ -41,7 +41,7 @@ export const dataComments = [
         id: 1,
         postId: 1,
         email: 'victoria@hotmail.com',
-        body: 'comment 1 lalala',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu felis id eros faucibus malesuada. Vestibulum nec mauris sit1 lalala',
     },
     {
         id: 2,
@@ -90,6 +90,18 @@ export const dataComments = [
         postId: 4,
         email: 'emma.smith@example.org',
         body: 'comment 6 Final comment for now.',
+    },
+    {
+        id: 9,
+        postId: 5,
+        email: 'user1@example.com',
+        body: 'This is a random comment for Random Post 1. It provides more details and insights about the content of the post. The comment is quite long and elaborates on var.',
+    },
+    {
+        id: 10,
+        postId: 6,
+        email: 'user2@example.com',
+        body: 'This is another random comment for Random Post 1. It continues the discussion from the previous comment and adds new perspectives to the topic. The comment is substantial and aims .',
     }
 ];
 //# sourceMappingURL=data.js.map
