@@ -1,3 +1,10 @@
+:root{
+    --white: #fffff5;
+    --primary: #32325D;
+    --title: #3A4F9A;
+    --gray: #575757;
+}
+
 body {
     width: 1512px;
     height: 982px;
@@ -41,7 +48,7 @@ header img {
 }
 
 header h1 {
-    color: var(--white, #FFF);
+    color: var(--white);
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -59,17 +66,17 @@ header h1 {
 }
 
 .post {
-    margin-inline-start: 341px;
+    margin: 20px 400px 0px 341px;
     width: 771px;
     height: 519px;
     flex-shrink: 0;
     border-radius: 8px;
-    background: var(--white, #FFF);
+    background: var(--white);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .post h2 {
-    color: var(--title, #3A4F9A);
+    color: var(--title);
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -80,7 +87,7 @@ header h1 {
 }
 
 .post p { 
-    color: var(--gray, #575757);
+    color: var(--gray);
     font-size: 13px;
     font-style: normal;
     font-weight: 300;
@@ -99,21 +106,25 @@ header h1 {
     flex-shrink: 0;
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    margin-inline-start: 342px;
+    margin: 16px 408px 0px 342px;
     font-family: Inter, sans-serif;
     display: grid;
     row-gap: 28px;
-    column-gap: 63px
-    margin-block-start: 63px
+    column-gap: 63px;
+    margin-block-start: 63px;
     padding: 36px 56px 0px 54px;
+    padding-block-start: 36px
 }
 
 .comments-details{
     width: 652px;
+    height: 60px;
+    border-bottom: 0.5px solid var(--gray);
+    padding-bottom: 26px;
 }
 .comments-details h3 {
     display: inline;
-    color: var(--title, #3A4F9A);
+    color: var(--title);
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -122,7 +133,7 @@ header h1 {
 }
 .comments-details p {
     display: inline;
-    color: var(--gray, #575757);
+    color: var(--gray);
     font-family: Inter;
     font-size: 16px;
     font-style: italic;

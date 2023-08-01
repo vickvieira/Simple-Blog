@@ -8,14 +8,22 @@ function showdata(listDataBase) {
         const img = document.createElement("img");
         const h2 = document.createElement("h2");
         const p = document.createElement("p");
+        const expand = document.createElement("a");
         article.classList.add("post");
         img.classList.add("post-image");
         img.src = item.imageUrl;
         h2.innerText = item.title;
-        p.textContent = item.body;
+        if (item.body.length > 185)
+            p.innerText = item.body.substring(0, 183) + "...";
+        else
+            p.innerText = item.body;
+        //p.textContent = item.body;
+        expand.textContent = "Expand...";
+        expand.href = `post.html?id=${item.postId}`;
         article.appendChild(img);
         article.appendChild(h2);
         article.appendChild(p);
+        article.appendChild(expand);
         //
         //article.addEventListener("click", function()// {
         // ({...item, id: dataPosts.length + 1})}
@@ -26,6 +34,4 @@ function showdata(listDataBase) {
     });
 }
 showdata(dataPosts);
-let posts = document.querySelector(".post");
-console.log(posts);
 //# sourceMappingURL=app.js.map
