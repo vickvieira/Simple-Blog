@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog of Posts</title>
-    <link rel="stylesheet" href="src/CSS/poststyle.css">
+    <link rel="stylesheet" href="src/CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,17 +16,11 @@
     </header>
 <body>
     <form>
-        <input type="button" value="Go back!" onclick="history.back()">
+        <img id="back" src="src/IMG/EllipseBack.png" alt="purple circular go back button"  type="button" value="" onclick="history.back()">
+        <img id="back-arrow" src="src/IMG/ArrowIcon.png" alt="white go back Arrow Icon" type="button" value="" onclick="history.back()">
     </form>
-    <article class="post" id="diferent-posts">
-        <img src="src/IMG/imagem_post.png" alt="Woman in virtual reality glasses clicking things in the air" class="post-image" id="postimage" >
-        <h2>The Future</h2>
-        <p id="texto"> 
-            Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text 
-            ever since the 1500s, when an unknown printer took...
-        </p>
-    </article>
+    <div class="expanded-post">
+    </div>
     <ul class="comments">
     </ul>   
     <script type="module" src="src/dist/app.js"></script>

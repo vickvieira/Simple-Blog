@@ -12,10 +12,7 @@ export const dataPosts: Post[] = [
         postId: 2,
         title: 'Second Post',
         imageUrl: "src/IMG/imagem_geral.png",
-        body: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys 
-        standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum has been the industrys 
-        standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum has been the industrys 
-        standard dummy text ever since the 1500s, when an unknown printer took`,    
+        body: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum been the industrys standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took`,    
     },
 
     {

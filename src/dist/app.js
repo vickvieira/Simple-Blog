@@ -1,7 +1,7 @@
 import { dataPosts } from './data.js';
 //Manipulando o DOM
 const ul = document.getElementById("showcase");
-function showdata(listDataBase) {
+function showPost(listDataBase) {
     const showcase = document.getElementById("showcase");
     listDataBase.forEach((item) => {
         const article = document.createElement("article");
@@ -33,5 +33,5 @@ function showdata(listDataBase) {
         }
     });
 }
-showdata(dataPosts);
+showPost(dataPosts);
 //# sourceMappingURL=app.js.map

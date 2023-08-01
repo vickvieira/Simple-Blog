@@ -57,15 +57,21 @@ header h1 {
     align-items: center;
     
 }
+#back {
+    margin-left: 34px;
+    margin-top: 23px;
+    width: 75px;
+    height: 75px;
+}
 
-.post-image {
+.post-details-image {
     width: 771px;
     height: 311.4px;
     flex-shrink: 0;
 
 }
 
-.post {
+.post-details {
     margin: 20px 400px 0px 341px;
     width: 771px;
     height: 519px;
@@ -75,7 +81,7 @@ header h1 {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.post h2 {
+.post-details h2 {
     color: var(--title);
     font-size: 20px;
     font-style: normal;
@@ -86,7 +92,7 @@ header h1 {
     margin-inline-start: 54.67px
 }
 
-.post p { 
+.post-details p { 
     color: var(--gray);
     font-size: 13px;
     font-style: normal;

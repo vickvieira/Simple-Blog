@@ -15,8 +15,6 @@ body {
 .list-posts {
     padding: 0px;
     margin: 0px;
-    position: relative;
-    bottom: 58px;
     display: grid;
     grid-template-columns: 409px 409px 409px;
     max-inline-size: 100%;
@@ -77,17 +75,6 @@ header h1 {
     padding-bottom: 26px;
 }
 
-#icon {
-    width: 214px;
-    position: relative;
-    margin: 3px;
-    margin-bottom: 47px;
-    bottom: 56px;
-    stroke-width: 3px;
-    stroke: var(--title);
-    border: 3px;
-}
-
 .post {
     width: 409px;
     height: 455px;
@@ -134,4 +121,102 @@ header h1 {
     text-decoration: none;
 }
 
+/*Post Details Style*/
+
+#back {
+    margin-left: 34px;
+    margin-top: 23px;
+    width: 75px;
+    height: 75px;
+}
+
+#back-arrow {
+    position: relative;
+    bottom: 16px;
+    left: -68px
+}
+
+.post-details-image {
+    width: 771px;
+    height: 311.4px;
+    flex-shrink: 0;
+
+}
+
+.post-details {
+    margin: 20px 400px 0px 341px;
+    width: 771px;
+    height: 519px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.post-details h2 {
+    color: var(--title);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 100% */
+    letter-spacing: 2px;
+    margin-left: 26px;
+    margin-inline-start: 54.67px
+}
+
+.post-details p { 
+    color: var(--gray);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 153.846% */
+    letter-spacing: 1.3px;
+    margin: 15px 21px 18px 29px;
+    width: 676.746px;
+    height: 124.332px;
+    flex-shrink: 0;
+    margin-inline-start: 54.67px
+}
+
+.comments{
+    width: 762px;
+    height: 321px;
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 16px 408px 0px 342px;
+    font-family: Inter, sans-serif;
+    display: grid;
+    row-gap: 28px;
+    column-gap: 63px;
+    margin-block-start: 63px;
+    padding: 36px 56px 0px 54px;
+    padding-block-start: 36px
+}
+
+.comments-details{
+    width: 652px;
+    height: 60px;
+    border-bottom: 0.5px solid var(--gray);
+    padding-bottom: 26px;
+}
+.comments-details h3 {
+    display: inline;
+    color: var(--title);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 125% */
+    letter-spacing: 1.6px;
+}
+.comments-details p {
+    display: inline;
+    color: var(--gray);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 20px;
+    letter-spacing: 1.6px;
+}
 

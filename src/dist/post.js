@@ -1,28 +1,33 @@
 import { dataPosts, dataComments } from './data.js';
 //Ideia de como poderia linkar os posts com os comments a partir das seguintes funções:
-//function findPostById(postId: number): Post | undefined {
-/// return dataPosts.find((item) => item.postId === postId);
-//}
-//Retorna o objeto Post correspondente ao postId fornecido da matriz dataPosts.
-//function filterCommentsByPostId(postId: number) {
-//c//onst filteredComment = dataComments.filter((comment) => comment.postId == postId);
-// return 
-//}
-//Retorna uma matriz de objetos Comments filtrada com base no postId fornecido da matriz dataComments.
-//function createCommentElement(comment: Comments): HTMLElement
-//Cria um elemento de comentário (por exemplo, <li>) com base nos dados do comentário fornecidos.
-//Retorna o elemento criado.
-//function showPostDetails(postId: number): void
-//Exibe os detalhes completos do post e seus comentários com base no postId fornecido.
-//Usa funções auxiliares como findPostById, filterCommentsByPostId, createCommentElement para preencher os elementos HTML relevantes no DOM.
-//exemplo de um código fazendo tudo em apenas uma função:
 function showPostAndComments(postId) {
     const post = dataPosts.find((item) => item.postId === postId);
     const comments = dataComments.filter((comment) => comment.postId === postId);
+    if (post) {
+        const showcase = document.getElementById("showcase");
+        const article = document.createElement("article");
+        const img = document.createElement("img");
+        const h2 = document.createElement("h2");
+        const p = document.createElement("p");
+        const div = document.querySelector(".expanded-post");
+        article.classList.add("post-details");
+        img.classList.add("post-details-image");
+        img.src = post.imageUrl;
+        h2.innerText = post.title;
+        p.textContent = post.body;
+        article.appendChild(img);
+        article.appendChild(h2);
+        article.appendChild(p);
+        div === null || div === void 0 ? void 0 : div.appendChild(article);
+        if (showcase) {
+            showcase.appendChild(article);
+        }
+    }
+    ;
     if (!comments) {
         return;
     }
-    console.log(comments);
+    console.log(comments); //verificar se os arrays estão sendo passados corretamente
     comments.forEach(item => {
         const section = document.createElement("section");
         const h3 = document.createElement("h3");
@@ -35,12 +40,11 @@ function showPostAndComments(postId) {
         section.appendChild(p);
         console.log(section);
         ul.appendChild(section);
-        console.log(ul);
+        console.log(ul); //verificar situação da ul criada
     });
 }
-// Extract the postId from the URL and call showPostAndComments function
 const urlParams = new URLSearchParams(window.location.search);
 const postId = parseInt(urlParams.get("id") || "0");
-console.log(postId);
+console.log(postId); //verificar o postId recebido
 showPostAndComments(postId);
 //# sourceMappingURL=post.js.map

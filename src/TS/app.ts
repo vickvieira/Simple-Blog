@@ -6,7 +6,7 @@ import { Post } from './interfaces.js';
 
 const ul = document.getElementById("showcase");
 
-function showdata(listDataBase: Post[]){
+function showPost(listDataBase: Post[]){
     const showcase = document.getElementById("showcase")
 
     listDataBase.forEach((item) => {
@@ -46,4 +46,4 @@ function showdata(listDataBase: Post[]){
         }
     });
 }
-showdata(dataPosts);
+showPost(dataPosts);
